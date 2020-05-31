@@ -2,19 +2,31 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  double padding = 16;
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Scaffold(
+    home: Home()
+  ));
+}
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  double padding = 16;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text(
-            "Alfabeto",
-            textAlign: TextAlign.center,
-            style: TextStyle(
+          "Alfabeto",
+          textAlign: TextAlign.center,
+          style: TextStyle(
               color: Colors.white,
               fontSize: 20
-            ),
+          ),
         ),
       ),
       body: Center(
@@ -42,6 +54,7 @@ void main() {
           ),
         ),
       ),
-    ),
-  ));
+    );
+
+  }
 }
