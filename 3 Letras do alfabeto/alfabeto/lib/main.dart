@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
               width: 20, color: Colors.cyan, style: BorderStyle.solid),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.all(1),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -123,7 +123,7 @@ class _HomeState extends State<Home> {
                       _letra,
                       style: TextStyle(
                           color: Colors.grey,
-                          fontSize: 340,
+                          fontSize: 300,
                           fontWeight: FontWeight.bold),
                     ),
                   ))
@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomAppBar(
           color: Colors.purple,
           child: Padding(
-            padding: EdgeInsets.all(30),
+            padding: EdgeInsets.all(25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
